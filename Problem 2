@@ -2,11 +2,10 @@
 %
 % Answer: 4613732
 % Runtime: .0001 seconds
-% Commentary: No tricks here
+% Commentary: The idea is to create an array A of all Fibbonacci numbers below four million and check if each element is even as it's being
+%             added to the array. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Parameterize the array, array index i, and the sum tracker.
 
 A(1)=1;
 
@@ -16,16 +15,18 @@ result=2;
 
 i=3;
 
-while A < 4000000 % While Fibonacci sequence (A) value does not exceed four million
+while A < 4000000        
 
-A(i)=A(i-1)+A(i-2); % The ith value of the array is equivalent to the sum of
-                    % the prior two values
-    if mod(A(i),2)==0      % If this value is divisible by 2
-       result=result+A(i); % add it to the sum.
+A(i)=A(i-1)+A(i-2);      
+
+    if mod(A(i),2)==0      
+       result=result+A(i); 
     end
     
-i=i+1; % Continue to define the next array element
+i=i+1; 
 
 end
 
 disp(result)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
