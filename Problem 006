@@ -1,13 +1,13 @@
 % Question: Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 %
 % Answer: 25164150
-% Runtime: .021 seconds (vector) or .036 seconds (loop)
+% Runtime: .001520 seconds (vector) or .036482 seconds (loop)
 % Commentary: MATLAB is weird in that vector computation is generally faster than using loops. Here's code for both methods.
 %             Note: Must use .* when multiplying vector elements or MATLAB will perform Matrix multiplication.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear
 clc
-clear all
 
 A=[1:100];
 
@@ -24,8 +24,8 @@ disp(result)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear 
 clc
-clear all
 
 S1=0;
 S2=0;
