@@ -11,6 +11,8 @@
 %             Additionally, we increment each check by 20 since any possible solution must be divisible by 20.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clc
+clear all
 
 for n=20:20:1000000000000 
 
