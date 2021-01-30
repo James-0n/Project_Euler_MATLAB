@@ -6,6 +6,8 @@
 % Commentary: No tricks here
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clc
+clear all
 
 result=0;   
 
