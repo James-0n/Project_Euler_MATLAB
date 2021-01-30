@@ -2,7 +2,7 @@
 % What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 %
 % Answer: 232792560
-% Runtime: 1.279 seconds
+% Runtime: 1.561245 seconds
 % Commentary: This problem is simple, but there is a neat mathematical optimization. Checking every single integer n for twenty mod conditions would
 %             waste a ton of time. However, if we recognize that if n is divisble by 20, it is also divisible by factors of 20 (1,2,4,5,10), we can
 %             be much more efficient. We know:
@@ -11,8 +11,8 @@
 %             Additionally, we increment each check by 20 since any possible solution must be divisible by 20.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear
 clc
-clear all
 
 for n=20:20:1000000000000 
 
