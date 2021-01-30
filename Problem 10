@@ -1,0 +1,6 @@
+% Question: Find the sum of all the primes below two million.
+%
+% Answer: 
+% Runtime: 4.97983 seconds
+% Commentary: The built-in MATLAB function primes solves this problem more quickly, but it uses a bunch of CS voodoo magic. We can achieve reasonable speed
+%             coding our own function with an ancient math algorithm called the Sieve of Eratosthenes. 
