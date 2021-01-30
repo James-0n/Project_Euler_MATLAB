@@ -2,7 +2,7 @@
 % Find the sum of all the multiples of 3 or 5 below 1000.
 %
 % Answer: 233168
-% Runtime: .0001 seconds
+% Runtime: .000988 seconds
 % Commentary: No tricks here
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -22,5 +22,4 @@ end
 end
 
 disp(result)
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
