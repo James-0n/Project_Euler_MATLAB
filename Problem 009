@@ -2,13 +2,13 @@
 % Find the product abc. Pythagorean triplet conditions: a^2 + b^2 = c^2.
 %
 % Answer: 31875000
-% Runtime: .186 seconds
+% Runtime: .037514 seconds
 % Commentary: We can set b < a in order to start the for loop at a+1. (Why? Assume a=b. Then a^2+a^2=1000=2*a^2 --> a^2 = 500.
 %             It follows that a= ~22.3607, but then a is not a natural number!)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear
 clc
-clear all
 
 a=1;
 
