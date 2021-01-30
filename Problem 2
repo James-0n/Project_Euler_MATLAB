@@ -6,6 +6,8 @@
 %             added to the array. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clc
+clear all
 
 A(1)=1;
 
