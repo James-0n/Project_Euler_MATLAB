@@ -1,13 +1,13 @@
 % Question: By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 %
 % Answer: 4613732
-% Runtime: .0001 seconds
+% Runtime: .044386 seconds
 % Commentary: The idea is to create an array A of all Fibbonacci numbers below four million and check if each element is even as it's being
 %             added to the array. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear
 clc
-clear all
 
 A(1)=1;
 
