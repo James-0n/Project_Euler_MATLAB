@@ -17,21 +17,14 @@ clc
 for n=20:20:1000000000000 
 
   for i=11:20 
-
     if mod(n,i)~=0 
-
       break 
-
-end
-
-end
+    end
+  end
 
 if i==20 
-
   result=n; 
-
   break 
-
 end
 
 end
