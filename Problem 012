@@ -3,7 +3,7 @@
 %
 % Answer: 76576500
 % Runtime: 4.373894 seconds
-% Commentary: This is the first Project Euler problem that requires significant computation time, so our our efficient sqrt check for factors
+% Commentary: This is the first Project Euler problem that requires significant computation, so our sqrt time save check for factors
 %             is crucial (without it, runtime exceeds ten minutes!).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
