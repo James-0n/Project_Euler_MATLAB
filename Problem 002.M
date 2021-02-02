@@ -9,19 +9,18 @@
 clear
 clc
 
-A(1)=1;
+A(1)=1;                      % Initialize first two terms for
+A(2)=2;                      % recursive definition
 
-A(2)=2;
-
-result=2;
+result=2;                    % A(2)=2 is even, so start sum at 2
 
 i=3;
 
-while A < 4000000        
+while A < 4000000            % No term in sequence exceeds four million
 
-A(i)=A(i-1)+A(i-2);      
+A(i)=A(i-1)+A(i-2);          % This defines our terms
 
-    if mod(A(i),2)==0      
+    if mod(A(i),2)==0        % Check for evenness 
        result=result+A(i); 
     end
     
