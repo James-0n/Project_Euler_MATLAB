@@ -13,8 +13,8 @@ result=0;
 
 for n=1:999 
 
-if mod(n,3)==0||mod(n,5)==0 
-
+if mod(n,3)==0||mod(n,5)==0  % '||' operator saves time over '|' since if the first condition
+                             % is true, then the second condition will not be evaluated.
 result=result+n;           
 
 end
