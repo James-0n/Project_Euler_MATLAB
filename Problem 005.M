@@ -8,13 +8,12 @@
 %             be much more efficient. We know:
 %             20 -> 1,2,4,5,10 ; 18 --> 3,6,9 ; 16 --> 8 ; 14 --> 7
 %             So now we only have to check for divisors 11-20.
-%             Additionally, we increment each check by 20 since any possible solution must be divisible by 20.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear
 clc
 
-for n=20:20:1000000000000 
+for n=20:20:1000000000000   % Increment checks by 20 since any possible solution must be div. by 20
 
   for i=11:20 
     if mod(n,i)~=0 
