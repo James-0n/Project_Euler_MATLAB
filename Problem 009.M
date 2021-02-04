@@ -3,7 +3,7 @@
 %
 % Answer: 31875000
 % Runtime: .037514 seconds
-% Commentary: We can set b < a in order to start the for loop at a+1. (Why? Assume a=b. Then a^2+a^2=1000=2*a^2 --> a^2 = 500.
+% Commentary: We can set b > a in order to start the for loop at a+1. (Why? Assume a=b. Then a^2+a^2=1000=2*a^2 --> a^2 = 500.
 %             It follows that a= ~22.3607, but then a is not a natural number!)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
