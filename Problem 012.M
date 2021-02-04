@@ -18,9 +18,9 @@ while i < 1000000
     
     A(i)=A(i-1)+i;
     
-    for x=1:sqrt(A(i))
-        if mod(A(i),x)==0
-            count=count-2;
+    for x=1:sqrt(A(i))              % We only need to check up to the square root
+        if mod(A(i),x)==0           % to find the 'small divisor'; just be sure to
+            count=count-2;          % subtract both divisors from the count tracker
         end
     end
     
