@@ -2,8 +2,8 @@
 %
 % Answer: 25164150
 % Runtime: .001520 seconds (vector) or .036482 seconds (loop)
-% Commentary: MATLAB is weird in that vector computation is generally faster than using loops. Here's code for both methods.
-%             Note: Must use .* when multiplying vector elements or MATLAB will perform Matrix multiplication.
+% Commentary: Vector computation is generally faster than using loops (especially in MATLAB). Here's code for both methods.
+%             Note: Must use .* over * when multiplying vector elements or MATLAB will perform Matrix multiplication.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear
@@ -13,9 +13,9 @@ A=[1:100];
 
 Square = A .* A;
 
-S1=sum(Square); 
+S1=sum(Square);     % S1 is the sum of all squares 1:100
 
-S2=sum(A).*sum(A); 
+S2=sum(A).*sum(A);  % S2 is the square of the sum of 1:100
 
 result=S2 - S1; 
 
