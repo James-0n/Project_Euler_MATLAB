@@ -9,7 +9,7 @@
 %             of perfect squares), one will be smaller than the square root and the other higher (Ex: sqrt(64)=8. The non trivial factor pairs are
 %             *2,32* *4,16* and *8,8*, so we will detect that 64 is not prime only checking up to 8.)
 %             The second is in the code implementing our function; simply start checking at an odd number, and increment by two instead of one, as
-%             we know all even numbers will be non-prime. 
+%             we know all even numbers (except 2) will be non-prime. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [x] = primecheck(n)
@@ -43,5 +43,5 @@ while c < 10001
     n=n+2;
 end
 
-disp(n-2)
+disp(n-2)                 % Be sure to subtract the two that was added on to n in the last loop evaluation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
