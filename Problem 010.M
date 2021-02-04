@@ -11,15 +11,15 @@ function [A]= listprimes(n)
 
 A(1)=0; 
 
-for i=2:n     
-   A(i)=1;    
+for i=2:n                 % Intialize all true array (except for one, which is non-prime, even though
+   A(i)=1;                % Eratosthenes considered it to be prime!). 
 end
 
 x=2;         
 
-while x^2 <= n
-       if A(x) == 1
-          A(x^2:x:n)=0;                      
+while x^2 <= n             % Start x at 2, for all other indices of A which are multiples of 2 
+       if A(x) == 1        % change the result to false (0). Then increment to the next prime in
+          A(x^2:x:n)=0;    % the list and continue to sqrt(n). 
        end
        x=x+1;
 end  
